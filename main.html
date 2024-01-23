@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+</head>
+<body>
+    <div id="home">
+    <header>
+        <img src="theme.png" id="banner">
+            <div class="navbar">
+            <ul>
+                <li><a href="#home"><h3 style="text-align:start;margin-left:10px;">HOME</h3></a></li>
+                
+                <li><a href="#about"><h3>ABOUT</h3></a></li>
+                <li><a href="#service"><h3>SERVICE</h3></a></li>
+                <li><a href="add to cart.html"><h3>ORDER</h3></a></li>
+                <li><a href="#menus"><h3>MENUS</h3></a></li>
+                <li><a href="#Contact_us"><h3>CONTACT</h3></a></b></li>
+                <button id="loginbutton" style="margin-top:5px;" onclick="fail()"><h3 style="margin-top: 5px;text-decoration: none;">LOGIN  <i class="fa fa-sign-in" style="font-size:36px;color:black;"></i></h3></button></a>
+                 
+            </ul>
+        </div>
+    </header>
+    
+    <div class="briyani">
+    <div id="quotes">
+        <h1 id="title" style="color:white;font-size:xx-large;font-weight:500px;font-family:'Times New Roman', Times, serif;font-size:60px;text-shadow: 5px 5px 5px gray">WELCOME TO HOMEMADE RESTAURANT</h1>
+        <p id="typingParagraph" style="color:gold;"></p><br>
+        <button id="book"><a href="booktable.html" style="text-decoration: none"><h3 style="color:white;">BOOK YOUR TABLE</h3></button></a>
+    </div>  
+    <div id="rotate">
+        <img src="finalbriyani.png" style="border-radius: 50%" alt="" id="rotateimage">
+    </div>
+    <div class="login"><br><br>
+        <input type="text" id="username" placeholder="Email name or phone number" style="margin-top:20px;margin-left:10px;width:90%;height:30px;border-radius:5px;"><br><br>  
+        <input type="text" id="password" placeholder="password" 
+        style="margin-top: 10px;margin-left:10px;width:90%;height:30px;border-radius:5px"><br><br>
+        <input type="button" onclick="log()"  value="LOGIN" id="log">
+    </div>
+    </div>
+    </div>
+</div>
+<!------------------------------ABOUT US--------------------------------->
+<div id="about">
+<div class="aboutus">
+<div id="imgabout">
+
+<img src="pexels-valeria-boltneva-1833349.jpg" id="imagescroll" >
+</div>
+<div id="about">
+<h1 style="color:gold;font-size:100px;">ABOUT US</h1>
+<div data-aos="fade-up-left" data-aos-duration="1000">
+
+<P style="font-family:Arial, Helvetica, sans-serif;font-size:30px;justify-content: center;background-color: gray;padding:20px;border-radius:5px ;">This home made RESTAURANT was running successfully since <span style="color:gold;">1990</span> with people support for more than 33 years of experience in catering industry. we are giving delicious and tasty food to the customer.our motive to satisfy customer to feel like a mom's recipe.</P>
+</div>
+</div>
+</div>
+</div>
+<!-----------------------------------------SERVICES----------------------->
+<div id="service">
+<div class="services">
+    <div id="services paragraph">
+        <!-- <h1 style="color:red;font-size:50px;">SERVICES</h1> -->
+        <div data-aos="fade-up-left" data-aos-duration="1000">
+        <p id="ser"> <span style="color:gold;font-size: xx-large;">SERVICES</span> <br><BR>we are providing online food delivery to your door step. cash on delivery also available.<br>you can feel authentic & tasty food.<BR><BR>
+            <button class="ordernow"><a href="add to cart.html" style="text-decoration: none">ORDER NOW</button></a></p></div>    
+            <!-- <button class="ordernow">ORDER NOW</button>     -->
+        </div>    
+    </div>
+    <div>
+        
+    <img src="online delivery.png.jpg" id="serviceimg">
+    </div>
+    <div id="circle"></div>
+    <div>
+    <img src="burger.jpg" id="burger">
+    </div>
+    <div id="red"></div>
+</div>
+</div>
+<!----------------------------------------SPECIAL MENUS-------------------->
+<div id="menus">
+<div class=".swipercontainer" style="height:100vh;
+background-color:black;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;">
+
+<h1 class="menus-title">OUR SPECIAL MENUS</h1>
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="burger.jpg" />
+        <div class="swiper-img-title"><h3 style="color:red">BURGER</h3></div>
+        <!-- <div class="swiper-rating">5</div> -->
+        
+      </div>
+      <div class="swiper-slide">
+        <img src="bri.jpg" />
+        <div class="swiper-img-title"><h3 style="color:red">BRIYANI</h3></div>
+      </div>
+      <div class="swiper-slide">
+        <img src="butter.jpg" />
+        <div class="swiper-img-title"><h3 style="color:red">BUTTER CHICKEN</h3></div>
+      </div>
+      <div class="swiper-slide">
+        <img src="gravy.jpg" />
+        <div class="swiper-img-title"><h3 style="color:red">MALAI GOFTA</h3></div>
+      </div>
+      <div class="swiper-slide">
+        <img src="grillchicken.png" />
+        <div class="swiper-img-title"><h3 style="color:red">GRILL CHICKEN</h3></div>
+      </div>
+      <div class="swiper-slide">
+        <img src="FALOODA.JPG" />
+        <div class="swiper-img-title"><h3 style="color:red">FALOODA</h3></div>
+      </div>
+      <div class="swiper-slide">
+        <img src="chickenrice.jpg" />
+        <div class="swiper-img-title"><h3 style="color:red">CHICKEN RICE</h3></div>
+      </div>
+      <div class="swiper-slide">
+        <img src="icecream.jpg" />
+        <div class="swiper-img-title"><h3 style="color:red">ICE CREAM</h3></div>
+      </div>
+      <div class="swiper-slide">
+        <img src="chickendum.jpg" />
+        <div class="swiper-img-title"><h3 style="color:aqua">CHICKEN DUM BRIYANI</h3></div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 15,
+    stretch: 0,
+    depth: 300,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+</script>
+<!---------------------------------------CONTACT US-------------------->
+<h1 style="text-align: center;color:black;">CONTACT US</h1>
+    <div id="Contact_us">
+      <img src="bar.jpg" id="bar">
+      <!-- <h1 style="text-align: center;color:white;">CONTACTUS</h1> -->
+        <div id="map">
+            <h1 style="text-align: center;color:white;background-color: black;">OUR LOCATION</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125042.27043148428!2d78.0558939423982!3d11.653891511600927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf1ccf52cba0b%3A0xee9989007068ca47!2sSalem%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700125893111!5m2!1sen!2sin"
+                width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h5 style="text-align:center;">phone no : 7899743755</h5>
+            <h5 style="text-align: center;">our email : HOME RESTAURANT@gmail.com</h5>
+        </div>
+        <div id="form">
+          <form name="contactForm" onsubmit="return validateForm()" method="post">
+            <div class="details">
+                <h1  style="background-color: black;color:white;text-align:center">Enter your Details</h1>
+                <div class="row">
+                <label>Enter your name:
+                <input type="text" id="cusername" style="width:60%;padding:10px;border-radius:3px;"></label>
+                <div class="error" id="nameErr" style="margin-left: 35%;font-size:large;"></div><br>
+                </div>
+                <div class="row">
+                <label>Enter your Email:
+                <input type="text" id="cmailid" style="width:60%;padding:10px;border-radius:3px;"></label>
+                <div class="error" id="emailErr" style="margin-left: 35%;font-size:large;"></div><br>
+                </div>
+                <div class="row">
+                <label for="msg">Enter your Message:</label><br><br>
+                <textarea name="" id="cmessage" cols="50" rows="10" style="margin-left:25px;"></textarea><br>
+                <div class="error" id="messageErr" style="margin-left: 35%;font-size:large;"></div><br>
+                </div>
+                <div class="row">
+                <button onclick="submit()"style="margin-left: 150px;background-color:green;color:white;height:50px;width:100px;border-radius: 5px;border:2px solid white;font-weight:50px;">submit</button>
+                </div>
+              </div>
+            </div>
+        </form>
+        <a href="#home"><svg xmlns="http://www.w3.org/2000/svg" style="color:orangered;margin-left:1100px;" width="50" height="50" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+        </svg></a>
+
+        </div>
+        
+      </body>
+    
+
+    
+
+
+
+
+<script>
+    AOS.init();
+  </script>
+
+</html>
