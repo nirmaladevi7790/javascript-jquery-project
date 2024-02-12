@@ -38,6 +38,59 @@
     {
         padding-bottom: 10px;
     }
+    .textbox{
+        margin-left:35px;
+        width:260px;
+        height:30px;
+        border-radius:10px;
+        border:5px solid transparent;
+        margin-left:20px  
+    }
+    .error{
+        margin-left: 35%;
+        font-size:large; 
+    }
+    .bookit{
+        margin-left:150px;
+        border-radius: 5px;
+        border:5px solid transparent;
+        background-color:black;
+        color:white;
+        width:200px;
+        height:50px ;
+        margin-top: 25px;
+    }
+    .text{
+        margin-left: 50px;
+    }
+    @media screen and (min-width:401px) and (max-width:700px) 
+{
+    #banner{
+       display:none;
+        }
+        .details{
+            margin-left:0px;
+            height:550px;
+            width:400px;
+    }
+    .textbox{
+        width: 150px;
+        height: 20px;
+    }
+    .text{
+        margin-left: 10px;
+    }
+    .bookit{
+        margin-left: 100px;
+        width:150px;
+        margin-top: 10px;
+        height: 30px;
+    }
+    .error{
+        font-size:small;
+        margin-left: 40%;
+    }
+}
 
     </style>
 </head>
@@ -48,37 +101,37 @@
     <div class="details" >
         <h1 style="text-align: center;">Enter your Details</h1>
         <div class="row">
-            <h3><label style="margin-left:50px"><b>Enter Name:   </label>
-            <input type="text" id="name" alt="" style="margin-left:35px;width:260px;height:30px;border-radius:10px;border:5px solid transparent;margin-left:20px">
-            <div class="error" id="nameErr" style="margin-left: 35%;font-size:large;"></div>
+            <h3><label class="text" ><b>Enter Name:   </label>
+            <input type="text" id="name" alt="" class="textbox">
+            <div class="error" id="nameErr" ></div>
         </div>
     
         <div class="row">
-        <label style="margin-left:50px">Contact Num: </label>
-        <input type="text" id="mobile" alt=""  maxlength="10" style="width:250px;height:30px;border-radius:10px;border:5px solid transparent;margin-left:20px;">
-        <div class="error" id="mobileErr" style="margin-left: 35%;font-size: large;"></div><br>
+        <label class="text" >Contact Num: </label>
+        <input type="text" id="mobile" alt=""  maxlength="10" class="textbox" >
+        <div class="error" id="mobileErr" ></div><br>
         </div>
 
         <div class="row">
-        <label style="margin-left:50px">Booking Date: </label>
-        <input type="datetime-local" id="date" alt="" style="margin-left:20px;width:250px;height:30px;border-radius:10px;border:5px solid transparent">
-        <div class="error" id="dateErr" style="margin-left: 35%;font-size: large;"></div><br>
+        <label class="text" >Booking Date: </label>
+        <input type="datetime-local" id="date" alt=""class="textbox">
+        <div class="error" id="dateErr" ></div><br>
         </div>
 
         <div class="row">
-        <label style="margin-left:50px">Booking Time: </label>
-        <input type="time"  id="time"alt="" style="width:250px;height:30px;border-radius:10px;border:5px solid transparent;margin-left:20px">  
-        <div class="error" id="timeErr" style="margin-left: 35%;font-size: large;"></div><br>
+        <label class="text" >Booking Time: </label>
+        <input type="time"  id="time"alt="" class="textbox">  
+        <div class="error" id="timeErr" ></div><br>
         </div>
         
         <div class="row">
-        <label style="margin-left:50px">Number of person: </label>
-        <input type="text" id="person" alt="" style="width:240px;height:30px;border-radius:10px;border:5px solid transparent">
-        <div class="error" id="personErr" style="margin-left: 35%;font-size: large;"></div><br>
+        <label class="text" >No.of.person: </label>
+        <input type="text" id="person" alt=""class="textbox" >
+        <div class="error" id="personErr"></div><br>
         </div>
 
         <div class="row">
-        <button onclick="booknow" class="bookit" style="margin-left:150px;border-radius: 5px;border:5px solid transparent;background-color:black;color:white;width:200px;height:50px ;margin-top: 25px;">BOOK NOW!</button>
+        <button onclick="booknow" class="bookit" >BOOK NOW!</button>
         </div>
     </div>
      </form>   
@@ -101,7 +154,7 @@ function validateForm() {
     var time=document.contactForm.time.value;
     var nameErr = true;
     
-    // var nameErr = personErr = mobileErr = dateErr = timeErr = true;
+    
     if(name == "") 
     {
         printError("nameErr", "Please enter your name");
