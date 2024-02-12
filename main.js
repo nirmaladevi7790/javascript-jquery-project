@@ -63,11 +63,7 @@ function typeParagraph() {
       var email = document.contactForm.cmailid.value;
       var message = document.contactForm.cmessage.value;
       var nameErr = true;
-      // var emailErr=true;
-      // var messageErr=true;
-      // var nameErr = emailErr = messageErr = true;
-
-      if(name == "") 
+    if(name == "") 
     {
         printError("nameErr", "Please enter your name");
     } 
@@ -122,6 +118,11 @@ else{
 }
 };
 
-
-
-      
+function toggleMenu()
+{
+    let toggle=document.querySelector(".menu-bar");
+    let menu=document.querySelector(".menu");
+    toggle.onclick= function(){
+    menu.classList.toggle("menu-active")  
+}
+}  
